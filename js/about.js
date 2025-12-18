@@ -4,74 +4,59 @@ export function createAboutSection() {
   section.id = "about";
 
   section.innerHTML = `
-    <div class="section-header">
-      <h2 class="section-title">About</h2>
-      <p class="section-subtitle">
-        Computer Engineering @ UC · software, embedded systems, and human-friendly tools.
-      </p>
+    <div style="display:flex; justify-content:center; margin-bottom:14px;">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Available for 2025 internships & opportunities ✦
+      </div>
     </div>
 
-    <div class="about-layout">
-      <div class="about-left">
+    <div class="hero-wrap">
+      <div>
+        <div class="kicker">Computer Engineer · Builder · Creative Technologist</div>
+
         <h1 class="hero-title">
-          Hi, I'm <span>Mouli Suri</span>.
+          Hi, I’m <span class="name">Mouli</span> ♡
         </h1>
+
         <p class="hero-sub">
-          Computer Engineering student at the University of Cincinnati, building things that are reliable,
-          a little bit clever, and actually useful.
+          I build <span class="hl">real systems</span> — from embedded microcontroller projects and OS-level concurrency work
+          to polished web apps — with <span class="hl2">design taste</span> and serious attention to detail.
         </p>
 
-        <div class="about-pill-row">
-          <span class="about-pill">IT Service Desk · UC</span>
-          <span class="about-pill">Full-stack & backend</span>
-          <span class="about-pill">Embedded & robotics</span>
-          <span class="about-pill">Global experience (India · Taiwan)</span>
+        <div class="stat-row">
+          <div class="stat">
+            <b>100+</b>
+            <span>Systems re-imaged / supported</span>
+          </div>
+          <div class="stat">
+            <b>3+</b>
+            <span>Industries (IT, infra, robotics)</span>
+          </div>
+          <div class="stat">
+            <b>Global</b>
+            <span>Built & learned in India + Taiwan</span>
+          </div>
         </div>
 
-        <div class="about-actions">
-          <a class="btn btn-primary" href="#contact">Contact me</a>
-          <a
-            class="btn btn-ghost"
-            href="https://www.linkedin.com/in/moulisuri/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View LinkedIn
-          </a>
-        </div>
-
-        <div class="about-body">
-          <p>
-            I’ve worked across IT support, server infrastructure, backend tools, and hands-on hardware:
-            from re-imaging 100+ systems at the Lindner IT Service Desk to building C++ automation tools
-            and Arduino-based robots in international workshops.
-          </p>
-          <p>
-            I like taking vague or messy technical problems and turning them into clear systems with good
-            documentation, clean interfaces, and real impact for the people using them.
-          </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-ghost" href="#contact">Let’s Connect ♡</a>
         </div>
       </div>
 
-      <aside class="about-right">
+      <aside class="card-aside">
         <div class="avatar-shell">
           <div class="avatar-inner">
-            <img
-              src="img/headshot.jpg"
-              alt="Photo of Mouli Suri"
-              class="avatar-img"
-            />
+            <img class="avatar-img" src="img/headshot.jpg" alt="Mouli Suri headshot" />
           </div>
         </div>
 
-        <div class="about-meta-card">
-          <div class="about-meta-title">Quick snapshot</div>
-          <div class="about-meta-list">
-            <span>🎓 B.S. Computer Engineering · UC · Class of 2026</span>
-            <span>💻 IT Service Desk · server & endpoint support</span>
-            <span>🤖 Embedded systems & robotics labs (PIC, Arduino)</span>
-            <span>🌏 International PBL workshop · Taipei Tech</span>
-          </div>
+        <div class="aside-tags">
+          <div class="tag"><i></i> Embedded systems (PIC/Arduino) + interrupts</div>
+          <div class="tag"><i></i> Systems & concurrency (mutexes, semaphores)</div>
+          <div class="tag"><i></i> Full-stack apps (Next.js + FastAPI)</div>
+          <div class="tag"><i></i> Teaching/mentoring + clear communication</div>
         </div>
       </aside>
     </div>
