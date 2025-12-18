@@ -1,53 +1,424 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mouli Suri | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mouli Suri • Portfolio</title>
 
-  <!-- Fonts: elegant serif + clean sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- soft grid + sparkles -->
-  <div class="bg-grid"></div>
-  <div class="bg-glow glow-1"></div>
-  <div class="bg-glow glow-2"></div>
-  <div class="sparkles" aria-hidden="true"></div>
+  <!-- background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+  <div class="bg-sparkles" aria-hidden="true"></div>
 
+  <!-- nav -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#about">
-        <span class="brand-dot"></span>
-        Mouli <span class="brand-spark">✦</span>
+      <a class="brand" href="#home">
+        <span class="brand-mark">Mouli</span>
+        <span class="brand-spark">✦</span>
       </a>
 
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="app" class="container"></main>
+  <main class="container">
+    <!-- HERO -->
+    <section id="home" class="section section-hero reveal">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        Available for internships & new opportunities
+        <span class="pill-spark">✦</span>
+      </div>
+
+      <div class="kicker">COMPUTER ENGINEER • BUILDER • CREATIVE TECHNOLOGIST</div>
+
+      <h1 class="hero-title">
+        Hi, I’m <span class="hero-name">Mouli</span><span class="hero-heart">♡</span>
+      </h1>
+
+      <p class="hero-sub">
+        I build <span class="hl-pink">real systems</span> — from embedded microcontroller projects
+        and OS-level concurrency work to polished full-stack apps — with
+        <span class="hl-peach">design taste</span> and obsessive attention to detail.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <b>UC</b><span>Computer Engineering</span>
+        </div>
+        <div class="stat">
+          <b>IT</b><span>Lindner Service Desk</span>
+        </div>
+        <div class="stat">
+          <b>HW+SW</b><span>Embedded + Full-stack</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">✦ View My Work</a>
+        <a class="btn btn-ghost" href="#contact">Let’s Connect ♡</a>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="section-top">
+        <div class="section-pill"><span class="mini">♡</span> ABOUT ME</div>
+        <h2 class="section-title">Nice to <em>meet you</em></h2>
+        <p class="section-sub">
+          I’m a fourth-year Computer Engineering student who loves building things that feel
+          clean, thoughtful, and genuinely useful — not just “it works.”
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="photo-card">
+            <div class="photo-frame">
+              <!-- Put your headshot here -->
+              <img src="img/headshot.jpg" alt="Mouli Suri headshot"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+              <div class="photo-empty">
+                <div class="emoji">📸</div>
+                <div class="caption">Add your headshot as img/headshot.jpg</div>
+              </div>
+            </div>
+
+            <div class="mini-pills">
+              <div class="mini-pill">✨ Aesthetic + Clean UI</div>
+              <div class="mini-pill">⚡ Systems + Concurrency</div>
+              <div class="mini-pill">🔧 Embedded Builder</div>
+              <div class="mini-pill">🧠 Product Mindset</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-text">
+            <h3>I’m the “make it work, make it clean, make it pretty” type.</h3>
+            <p>
+              I’ve built everything from a PIC-based 3-bit calculator using interrupts to web apps with
+              authentication and APIs. I love projects where I can combine technical depth with design.
+            </p>
+            <p>
+              Outside of engineering, I enjoy teaching (I’ve taught electronics and drones to kids),
+              and I’m always thinking about how to make technology feel more human.
+            </p>
+          </div>
+
+          <div class="work-with">
+            <h4>✦ What I Work With</h4>
+
+            <div class="work-row">
+              <div class="work-left">
+                <div class="iconbox">⌁</div>
+                <div>
+                  <div class="work-title">Full-Stack</div>
+                  <div class="work-sub">Building end-to-end experiences</div>
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Next.js</span><span class="chip">React</span><span class="chip">FastAPI</span><span class="chip">REST</span>
+              </div>
+            </div>
+
+            <div class="work-row">
+              <div class="work-left">
+                <div class="iconbox">⚙</div>
+                <div>
+                  <div class="work-title">Systems</div>
+                  <div class="work-sub">Concurrency & low-level fundamentals</div>
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Linux</span><span class="chip">Threads</span><span class="chip">Mutex/Semaphores</span>
+              </div>
+            </div>
+
+            <div class="work-row">
+              <div class="work-left">
+                <div class="iconbox">✎</div>
+                <div>
+                  <div class="work-title">Embedded</div>
+                  <div class="work-sub">Microcontrollers, interrupts, real hardware</div>
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">PIC Assembly</span><span class="chip">MPLAB X</span><span class="chip">Arduino</span>
+              </div>
+            </div>
+
+            <div class="quote">
+              <div class="quote-pill">My energy</div>
+              <p>“Ambitious builder with taste — I want my work to be sharp and memorable.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <div class="section-top">
+        <div class="section-pill"><span class="mini">⌁</span> EXPERIENCE</div>
+        <h2 class="section-title">My <em>Journey</em></h2>
+        <p class="section-sub">
+          The hands-on roles that shaped how I build: fast debugging, real users, real systems.
+        </p>
+
+        <div class="mini-stats">
+          <div><b>IT</b><span>Support & troubleshooting</span></div>
+          <div><b>Teach</b><span>Electronics & drones</span></div>
+          <div><b>Build</b><span>HW + SW projects</span></div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-date">2024 — Present</div>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-pill">Part-time</div>
+            <div class="t-role">IT Service Desk Technician</div>
+            <div class="t-company">Lindner IT (University of Cincinnati)</div>
+            <div class="t-loc">Cincinnati, OH</div>
+            <p class="t-desc">Supporting students/faculty with real-time troubleshooting and device workflows.</p>
+            <ul class="t-bullets">
+              <li>Diagnose hardware/software issues across Windows/macOS environments.</li>
+              <li>Communicate solutions clearly under time pressure.</li>
+              <li>Manage tickets and resolve user-impacting issues efficiently.</li>
+            </ul>
+            <div class="t-chips">
+              <span class="chip">Troubleshooting</span><span class="chip">Customer Support</span><span class="chip">IT Ops</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-date">2023 — 2024</div>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-pill">Part-time</div>
+            <div class="t-role">Electronics & Drone Instructor</div>
+            <div class="t-company">STEM Teaching Role</div>
+            <div class="t-loc">Cincinnati, OH</div>
+            <p class="t-desc">Taught hands-on building to elementary & middle school students.</p>
+            <ul class="t-bullets">
+              <li>Led lessons on circuits, basic robotics, and drone concepts.</li>
+              <li>Made technical ideas approachable and fun.</li>
+            </ul>
+            <div class="t-chips">
+              <span class="chip">Teaching</span><span class="chip">Electronics</span><span class="chip">Robotics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-date">Ongoing</div>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-pill">Coursework</div>
+            <div class="t-role">Embedded Systems & OS Projects</div>
+            <div class="t-company">University of Cincinnati</div>
+            <div class="t-loc">CEAS</div>
+            <p class="t-desc">Built microcontroller labs and concurrency projects with real constraints.</p>
+            <ul class="t-bullets">
+              <li>PIC16F886 labs: interrupts, timers, I/O, A/D converters.</li>
+              <li>Concurrency: multithreading, mutexes, semaphores, reader-writer locks.</li>
+            </ul>
+            <div class="t-chips">
+              <span class="chip">Embedded</span><span class="chip">Linux</span><span class="chip">Concurrency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="section-top">
+        <div class="section-pill"><span class="mini">✦</span> PROJECTS</div>
+        <h2 class="section-title">Things I’ve <em>Built</em></h2>
+        <p class="section-sub">
+          Projects that show how I think: technical depth + clean UX + real usefulness.
+        </p>
+      </div>
+
+      <h3 class="subhead">Featured Work</h3>
+
+      <div class="featured-grid">
+        <article class="project-card">
+          <div class="p-top">
+            <div class="p-icon">💸</div>
+            <div class="p-badge">Featured</div>
+          </div>
+          <div class="p-kicker">PERSONAL FINANCE</div>
+          <div class="p-title">MoneyTracker</div>
+          <p class="p-desc">
+            A personal finance tracker with dashboards, categories, and clear month-to-month insights.
+          </p>
+          <div class="p-metrics">
+            <div><b>CRUD</b><span>Transactions</span></div>
+            <div><b>Charts</b><span>Insights</span></div>
+          </div>
+          <div class="p-chips">
+            <span class="chip">Next.js</span><span class="chip">FastAPI</span><span class="chip">SQL</span>
+          </div>
+          <div class="p-actions">
+            <a class="p-link" href="https://github.com/surimouli" target="_blank" rel="noreferrer">Source</a>
+            <a class="p-link primary" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="p-top">
+            <div class="p-icon">🔧</div>
+            <div class="p-badge">Featured</div>
+          </div>
+          <div class="p-kicker">EMBEDDED SYSTEMS</div>
+          <div class="p-title">PIC 3-bit Calculator</div>
+          <p class="p-desc">
+            Built on PIC16F886 using interrupts + buttons for input and LEDs for output
+            (addition, subtraction, multiplication).
+          </p>
+          <div class="p-metrics">
+            <div><b>ISR</b><span>Interrupt-driven</span></div>
+            <div><b>LED</b><span>Binary display</span></div>
+          </div>
+          <div class="p-chips">
+            <span class="chip">PIC Assembly</span><span class="chip">MPLAB X</span><span class="chip">Timers</span>
+          </div>
+          <div class="p-actions">
+            <a class="p-link" href="https://github.com/surimouli" target="_blank" rel="noreferrer">Source</a>
+            <a class="p-link primary" href="#" target="_blank" rel="noreferrer">Details</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subhead">More Projects</h3>
+      <div class="more-projects">
+        <div class="mini-card">
+          <div class="mini-left">
+            <div class="mini-ic">👗</div>
+            <div>
+              <div class="mini-title">Outfit Suggestor</div>
+              <div class="mini-desc">Weather + occasion-based outfit recommendation app.</div>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">UI</span>
+          </div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-left">
+            <div class="mini-ic">🧵</div>
+            <div>
+              <div class="mini-title">Concurrency Labs</div>
+              <div class="mini-desc">Dining philosophers + starvation reasoning + scheduling analysis.</div>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip">Threads</span><span class="chip">Mutex</span><span class="chip">Semaphores</span>
+          </div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-left">
+            <div class="mini-ic">🤖</div>
+            <div>
+              <div class="mini-title">Arduino Robot Build</div>
+              <div class="mini-desc">Hands-on robot project built during study abroad.</div>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip">Arduino</span><span class="chip">Sensors</span><span class="chip">Control</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="section-top">
+        <div class="section-pill"><span class="mini">⌁</span> GET IN TOUCH</div>
+        <h2 class="section-title">Let’s <em>Create</em> Together</h2>
+        <p class="section-sub">
+          If you think I’d be a great fit — I’d love to talk. I reply fast and I’m easy to work with ♡
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-label">Preferred method</div>
+          <div class="contact-title">Email me</div>
+          <!-- Replace with your real email -->
+          <a class="email-pill" href="mailto:surimouli@uc.edu">surimouli@uc.edu</a>
+          <div class="contact-foot">Usually replies within 24–48 hours</div>
+
+          <div class="info-grid">
+            <div class="info-item"><span>School</span><b>University of Cincinnati</b></div>
+            <div class="info-item"><span>Location</span><b>Cincinnati, OH</b></div>
+            <div class="info-item"><span>Timezone</span><b>Central (UTC-6)</b></div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="status-pill"><span class="pill-dot"></span> Currently available</div>
+          <p class="contact-par">
+            Open to internships, co-ops, and collaborative projects — especially where I can blend systems + design.
+          </p>
+
+          <div class="socials">
+            <a class="social" href="https://github.com/surimouli" target="_blank" rel="noreferrer">
+              <span>GitHub</span><b>@surimouli</b>
+            </a>
+            <a class="social" href="#" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span><b>/in/mouli-suri</b>
+            </a>
+            <a class="social" href="#" target="_blank" rel="noreferrer">
+              <span>Portfolio</span><b>surimouli.github.io</b>
+            </a>
+          </div>
+
+          <div class="music">
+            ♪ currently: building + polishing + overthinking the padding (as usual)
+          </div>
+        </div>
+      </div>
+
+      <div class="big-faint">
+        let’s build something <span>beautiful</span> ♡
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>Made with 💗 by Mouli</div>
-      <div>© <span id="year"></span></div>
+      <div>Made with ♡ by Mouli</div>
+      <div>© <span id="year"></span> All rights reserved ✦</div>
     </div>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
