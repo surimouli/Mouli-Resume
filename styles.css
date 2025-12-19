@@ -470,3 +470,33 @@ main{padding:18px 0 24px}
   .nav{gap:14px;flex-wrap:wrap;justify-content:flex-end}
   .stats{grid-template-columns:1fr}
 }
+
+/* ===== Make sections full-page (remove card/box look) ===== */
+.section{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 34px 0 !important;            /* space without a box */
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Keep the hero centered but not boxed */
+.section-hero{
+  padding-top: 46px !important;
+  padding-bottom: 46px !important;
+}
+
+/* Optional: subtle dividers between sections */
+.section + .section{
+  border-top: 1px solid rgba(43,31,34,.08);
+}
+
+/* Make content feel fuller on screen */
+.container{
+  max-width: 1200px;   /* slightly wider */
+}
+main{
+  padding-top: 6px;
+}
