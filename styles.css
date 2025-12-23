@@ -94,6 +94,19 @@ a{color:inherit;text-decoration:none}
 }
 .nav a:hover::after{width:100%}
 
+/* ✅ resume buttons in nav */
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-shrink:0;
+}
+.btn-sm{
+  padding:10px 14px;
+  font-size:13px;
+}
+
+/* base */
 main{padding:18px 0 24px}
 
 /* SECTIONS */
@@ -468,6 +481,7 @@ main{padding:18px 0 24px}
 }
 @media (max-width: 560px){
   .nav{gap:14px;flex-wrap:wrap;justify-content:flex-end}
+  .nav-actions{width:100%;justify-content:flex-end}
   .stats{grid-template-columns:1fr}
 }
 
@@ -477,25 +491,22 @@ main{padding:18px 0 24px}
   border: none !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
-  padding: 34px 0 !important;            /* space without a box */
+  padding: 34px 0 !important;
   margin: 0 !important;
   border-radius: 0 !important;
 }
 
-/* Keep the hero centered but not boxed */
 .section-hero{
   padding-top: 46px !important;
   padding-bottom: 46px !important;
 }
 
-/* Optional: subtle dividers between sections */
 .section + .section{
   border-top: 1px solid rgba(43,31,34,.08);
 }
 
-/* Make content feel fuller on screen */
 .container{
-  max-width: 1200px;   /* slightly wider */
+  max-width: 1200px;
 }
 main{
   padding-top: 6px;
